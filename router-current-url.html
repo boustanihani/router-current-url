@@ -1,0 +1,23 @@
+<template name="defaultLayout">
+  <h3>Default layout</h3>
+  <nav>
+    <a href="/">Home</a>&nbsp;
+    <a href="/myroute">My route</a>&nbsp;
+  </nav>
+  <br>
+  <div>
+    <span>Router.current().url&nbsp;=&nbsp;<strong>{{currentUrl}}</strong></span>
+  </div>
+  <br>
+  <div style="padding:1em;border:solid;">
+    {{> yield}}
+  </div>
+</template>
+
+<template name="home">
+  <h3>Home</h3>
+</template>
+
+<template name="myroute">
+  <h3>My route</h3>
+</template>
